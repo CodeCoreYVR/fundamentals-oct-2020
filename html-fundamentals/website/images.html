@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+</head>
+<body>
+  <!-- Relative paths -->
+
+  <!-- 
+    "./" is an alias for the current directory that holds this file 
+    If the image can't be found or doesn't load,
+    the text in the "alt" attribute will be displayed instead.
+    Also used in screen readers for the visually impaired.
+  -->
+  <img src="./butterfly.jpg" alt="butterfly">
+
+  <!-- Relative to the root of the directory of this file (same as above) -->
+  <img src="butterfly.jpg" alt="butterfly">
+
+  <!-- 
+    "../" is an alias for the parent directory.
+    The current directory that this file resides in is "website".
+    The parent directory of "website" is "html-fundamentals"
+  -->
+  <img src="../fly.jpg" alt="fly">
+
+  <!-- Absolute paths -->
+  <!-- 
+    "/" is an alias for the root of website that's hosted by live server extenstion
+    or root of the drive on your machine if you open the file itself
+   -->
+  <img src="/html-fundamentals/fly.jpg" alt="fly">
+
+  <!-- We can access an image from the internet using HTTP -->
+  <img src="https://images.freeimages.com/images/large-previews/856/fomenteu-la-lectura-1310629.jpg" alt="book">
+</body>
+</html>

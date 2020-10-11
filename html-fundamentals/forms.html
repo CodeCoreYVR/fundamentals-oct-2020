@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- 
+      The "action" attribute tells where to send the form data
+      on submission and the "method" is the http verb
+     -->
+    <form action="./submission.html" method="GET">
+      
+      <!-- 
+        the "name" attribute represents the keys to the form data that will 
+        be sent within this form tag. Each "name" will have a corresponding value 
+        from it's associated input
+       -->
+      <div>
+        <label for="name">Name</label>
+        <input name="name" type="text" id="name">
+      </div>
+
+      <!-- 
+        A second way of matching a label to an input is by omitting the 
+        "for" and "id" attributes and making label the parent
+       -->
+      <div>
+        <label>Email
+          <input name="email" type="email">
+        </label>
+      </div>
+      
+      <div>
+        <label for="description">Description</label>
+        <textarea 
+          name="description" 
+          id="description" 
+          cols="25" 
+          rows="3"
+          placeholder="I like to code"
+        ></textarea>
+      </div>
+      
+      <!-- 
+        Both radio buttons have the attribute name="gender",
+        but only one value will be submitted
+       -->
+      <div>
+        <label for="male">Male</label>
+        <input name="gender" type="radio" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input name="gender" type="radio" id="female" value="female">
+      </div>
+
+      <div>
+        <label for="language">
+          What is your first language?
+        </label>
+        <select name="language" id="language">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="russian">Russian</option>
+          <option value="chinese">Chinese</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- 
+        The required attribute doesn't need a value
+        It will not allow the form to be submitted if the
+        value is empty
+       -->
+      <div>
+        <label for="agreement">I agree to the terms and conditions</label>
+        <input id="agreement" type="checkbox" required>
+      </div>
+
+      <input type="reset">
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
