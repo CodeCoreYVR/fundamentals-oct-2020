@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Properties</title>
+  <style>
+    body { margin-bottom: 500px; }
+  </style>
+</head>
+<body>
+  <h1>CSS Properties Demo</h1>
+
+  <h2>Font-Size</h2>
+  <div>
+    <h3>Absolute Units</h3>
+    <div>
+      <p style="font-size: 12px;">
+        1 px is 1/96th of an inch, not the pixel of the screen of the viewing device.
+      </p>
+      <p style="font-size: 0.5cm;">
+        Half a centimetre. Don't have spaces in between the number and the unit like this: "0.5 cm"
+      </p>
+    </div>
+    <h3>Relative Units</h3>
+    <div style="font-size: 40px;">
+      <p style="font-size: 0.5em; border: 0.25em solid black;">
+        em is relative to the font-size of the parent element if we're using it for font properties.
+        If we're using em for anything that's not font related, then it's relative 
+        to this element's font-size.
+        This element's font-size is 0.5em x 40px = 20px
+        The border (non-font property) is 0.25em x 20px = 5px
+      </p>
+    </div>
+    <p style="font-size: 1.5rem;">
+      If the root element's (html element) font-size is 16px, then 1.5rem x 16px = 24px
+    </p>
+  </div>
+
+  <h2>Color</h2>
+  <div>
+    <p style="color: orchid;">Predefined color names</p>
+    <p style="color: #20EE96;">Hex color code</p>
+    <p style="color: rgb(32, 238, 150);">rgb value</p>
+    <p style="color: rgb(32, 238, 150, 0.5);">rgba value, alpha ranges from 0 to 1 (transparency)</p>
+  </div>
+
+  <h2>Text-Decoration</h2>
+  <div>
+    <p style="text-decoration: underline;">Underline</p>
+    <p style="text-decoration: overline;">Overline</p>
+    <p style="text-decoration: line-through;">Line Through</p>
+  </div>
+
+  <h2>Width</h2>
+  <div style="width: 200px; background-color: #aaa;">
+    200px wide
+    width only applies to the content, not the padding or margins
+  </div>
+  <div style="border: 2px solid black; width: 400px;">
+    <div style="width: 50%; background-color: aqua;">
+      Percentage units are relative to the parent element's value of the same property
+      50% x 400px = 200px
+    </div>
+  </div>
+  <div style="width: 50vw; background-color: mediumseagreen;">
+    vw is relative to viewport's width, range is from 0-100
+    1 unit of vw is 1% of the viewport's width
+  </div>
+
+  <h2>Height</h2>
+  <div style="height: 20px; background-color: #aaa;">
+    20px high
+  </div>
+  <div style="border: 2px solid black; height: 100px;">
+    <div style="height: 50%; background-color: aqua;">
+      Percentage units are relative to the parent element's value of the same property
+      50% x 100px = 50px
+    </div>
+  </div>
+  <div style="height: 50vh; background-color: mediumseagreen;">
+    vh is relative to viewport's height, range is from 0-100
+    1 unit of vw is 1% of the viewport's height
+  </div>
+  <h2>Text-Align</h2>
+  <div style="border: 2px solid black;">
+    <p style="text-align: left;">Left-aligned</p>
+    <p style="text-align: right;">Right-aligned</p>
+    <p style="text-align: center;">
+      Center Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nisi ut quidem doloribus sequi,
+      esse laudantium magni excepturi in mollitia omnis inventore, quam illum labore, ratione quas commodi tempora. Consequatur?
+    </p>
+    <p style="text-align: justify;">
+      Jusitify Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore quisquam aspernatur dolor architecto delectus 
+      ipsa! Dolorem unde eius, et architecto tenetur necessitatibus fugit minus accusamus magni nulla, assumenda magnam.
+    </p>
+  </div>
+
+  <h2>Opacity / Transparency</h2>
+  <div>
+    <p>Opacity (0 to 1) applies to entire element (background and text)</p>
+    <p style="opacity: 0.5; background-color: darkblue; color: white;">50% opacity</p>
+    <p style="opacity: 1; background-color: darkblue; color: white;">Not Opaque</p>
+  </div> 
+
+  <h2>Background</h2>
+  <div style="background-color:darkviolet;">Background Color</div>
+  <div style="background-image: url('https://images.freeimages.com/images/large-previews/1c9/maine-at-4-45-am-1370871.jpg'); height: 100vh;">Background Image</div>
+  <br>
+  <div style="background-image: url('https://images.freeimages.com/images/large-previews/1c9/maine-at-4-45-am-1370871.jpg'); height: 100vh; background-repeat: no-repeat;">Background No Repeat</div>
+  <br>
+  <div style="background-image: url('https://images.freeimages.com/images/large-previews/1c9/maine-at-4-45-am-1370871.jpg'); height: 100vh; background-size: contain;">Background Contain contains the whole image</div>
+  <br>
+  <div style="background-image: url('https://images.freeimages.com/images/large-previews/1c9/maine-at-4-45-am-1370871.jpg'); height: 100vh; background-size: contain; background-repeat: no-repeat;">Background Contain and no repeat</div>
+</body>
+</html>

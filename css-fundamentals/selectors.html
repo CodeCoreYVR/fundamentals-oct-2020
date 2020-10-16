@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+    /* Tag Selector */
+    h1 {
+      text-decoration: underline;
+    }
+
+    /* To select classes, use "." appended with the class name */
+    .post {
+      text-align: justify;
+    }
+
+    .red {
+      color: red;
+    }
+
+    /* To select IDs, use the "#" symbol appended with the id name */
+    #first-paragraph {
+      background-color: gainsboro;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    Classes can applied by giving an attribute
+    You can add classes to as many elements as you wish
+   -->
+  <h1 class="red">Selectors</h1>
+
+  <!-- 
+    ids are applied by giving an attribute
+    They should be unique per document
+   -->
+  <p class="post red" id="first-paragraph">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Odio eaque maxime laborum unde, ex aliquam adipisci. 
+    Assumenda, quod? A quia quaerat quos nemo ea
+    blanditiis sapiente, odit optio rerum nostrum.
+  </p>
+  <p class="post red">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Odio eaque maxime laborum unde, ex aliquam adipisci. 
+    Assumenda, quod? A quia quaerat quos nemo ea
+    blanditiis sapiente, odit optio rerum nostrum.
+  </p>
+</body>
+</html>
