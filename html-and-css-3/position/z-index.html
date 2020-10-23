@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index</title>
+  <style>
+    div.parent {
+      border: 1px solid black;
+      height: 300px;
+      width: 300px;
+      position: relative;
+      background-color: purple;
+    }
+    div.child {
+      background-color: powderblue;
+      height: 200px;
+      width: 200px;
+
+      bottom: -20px;
+      right: -20px;
+      
+      position: relative;
+      /* 
+        The higher z-index will show on top of the lower one 
+        The default value is 0
+        z-index can only be applied to non-static elements
+      */
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

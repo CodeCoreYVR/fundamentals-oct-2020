@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute</title>
+  <style>
+    div.parent {
+      border: 1px solid black;
+      height: 300px;
+      width: 300px;
+      /* If the child has no ancestors that are non-static then it's relative to the <body> */
+      position: relative;
+    }
+    div.child {
+      background-color: powderblue;
+      height: 200px;
+      width: 200px;
+
+      /* 
+        top, left, right, and bottom properties now have an effect
+        These effects are relative to the first ancestor that is not static
+        If none of these properties are in effect then it's in its normal position.
+       */
+      top: 0px;
+      right: 0px;
+      
+      /* absolute is relative the first ancestor that is not static */
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>
+

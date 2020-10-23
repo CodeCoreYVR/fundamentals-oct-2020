@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative</title>
+  <style>
+    div.parent {
+      border: 1px solid black;
+      height: 300px;
+      width: 300px;
+    }
+    div.child {
+      background-color: powderblue;
+      height: 200px;
+      width: 200px;
+
+      /* 
+        top, left, right, and bottom properties now have an effect because its
+        postion is relative. These effects are relative to its normal (static) postion
+       */
+      top: 20px;
+      /* right: -30px; */
+      left: 30px;
+      /* Relative is positioned relative to its normal static position */
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

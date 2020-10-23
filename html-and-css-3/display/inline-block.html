@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline-block</title>
+  <style>
+    /* The default display for buttons are inline-block */
+    button {
+      display: inline-block;
+      border: 3px solid black;
+
+      /* 
+        Unlike inline, you can change the height/width and 
+        margins/padding but they still sit inline and don't 
+        start on a new line like block level elements do
+      */
+      height: 50px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+  <p id="second">
+    Lorem ipsum, sit amet <button>THIS IS AN INLINE-BLOCK BUTTON</button>consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+</body>
+</html>

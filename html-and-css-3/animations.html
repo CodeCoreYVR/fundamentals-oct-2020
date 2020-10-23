@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes</title>
+  <style>
+    .box {
+      height: 500px;
+      width: 500px;
+      background-color: darkgray;
+      animation-name: switch-color;
+      animation-duration: 5s; /* required */
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes switch-color {
+      from {
+        background-color: red;
+      } 
+      to {
+        background-color: khaki;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline</title>
+  <style>
+    /* <a> default display is inline */
+    a {
+      display: inline;
+      color: blueviolet;
+
+      /* 
+        height and width don't affect inline elements, 
+        they only take up the height and width
+        that's needed for the content
+      */
+      height: 10000px;
+      width: 10000px;
+
+      /* top and bottom margin/padding aren't affected but left and right are */
+      margin-top: 200px;
+      margin-left: 40px;
+      padding-bottom: 200px;
+    }
+    /* 
+      Even though <p> is block by default, you can always change the display to something else 
+    */
+    p {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+  <p id="second">
+    Lorem ipsum, sit amet <a>THIS IS AN INLINE LINK</a>consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet doloremque a voluptates quas corporis et magnam ullam ratione minus? Ex.
+  </p>
+</body>
+</html>
