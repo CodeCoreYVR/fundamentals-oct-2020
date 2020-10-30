@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Pyramid</title>
+  <style>
+    .red { background-color: red; }
+    .orange { background-color: orange; }
+    .yellow { background-color: yellow; }
+    .green { background-color: green; }
+
+    .row {
+      display: flex;
+      /* border: black solid 1px; */
+      justify-content: center;
+    }
+
+    .circle {
+      height: 150px;
+      width: 150px;
+      border-radius: 75px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="red circle"></div>
+  </div>
+  <div class="row">
+    <div class="orange circle"></div>
+    <div class="orange circle"></div>
+  </div>
+  <div class="row">
+    <div class="yellow circle"></div>
+    <div class="yellow circle"></div>
+    <div class="yellow circle"></div>
+  </div>
+  <div class="row">
+    <div class="green circle"></div>
+    <div class="green circle"></div>
+    <div class="green circle"></div>
+    <div class="green circle"></div>
+  </div>
+</body>
+</html>

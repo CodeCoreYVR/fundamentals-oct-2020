@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Layout</title>
+  <style>
+    body { margin: 0; }
+    header, footer {
+      background-color: firebrick;
+      position: fixed;
+      width: 100vw;
+      height: 8vh;
+    }
+    header { top: 0; }
+    footer { bottom: 0; }
+
+    .banner {
+      margin: auto;
+      margin-top: 8vh;
+      width: 95vw;
+      height: 20vh;
+    }
+    .content {
+      width: 60vw;
+      float: left;
+      margin-top: 2.5vh;
+      margin-left: 2.5vw;
+      height: 59vh;
+    }
+    .sidebar {
+      width: 32.5vw;
+      float: right;
+      margin-top: 2.5vh;
+      margin-right: 2.5vw;
+      height: 59vh;
+    }
+
+    div { background-color: teal;}
+
+    p { color: white;}
+  </style>
+</head>
+<body>
+  <header>
+    <p>Header</p>
+  </header>
+  <div class="banner">
+    <p>Banner</p>
+  </div>
+  <div class="content">
+    <p>Content</p>
+  </div>
+  <div class="sidebar">
+    <p>Sidebar</p>
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
