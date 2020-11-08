@@ -1,0 +1,12 @@
+{
+  "todos": {
+    "1": {
+      "name": "Wash dishes",
+      "isComplete": false
+    },
+    "2": {
+      "name": "Learn Firebase",
+      "isComplete": false
+    }
+  }
+}
